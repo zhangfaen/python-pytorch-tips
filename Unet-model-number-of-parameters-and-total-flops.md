@@ -22,6 +22,11 @@
     # Computational complexity:       199.22 GMac (Giga(10 ** 9) multiply or add calculation, 有的时候也用 FLOPs : floating point operations)
     # Number of parameters:           17.26 M 
 
+    <!-- 最后的输出大小为Cout*Mh*Mw
+
+    参数量：
+    Cout*Cin*Kh*Kw -->
+
     # 计算量：
     # 卷积乘：
     # (Kw*Kh)*(Mh*Mw)*(Cin*Cout)
