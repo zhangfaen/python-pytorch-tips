@@ -13,5 +13,5 @@
     #  ('callable:True', 'max', <class 'builtin_function_or_method'>),
     #  ('callable:True', 'memoryview', <class 'type'>),
     #  ('callable:True', 'min', <class 'builtin_function_or_method'>)]
-def pi(obj, pattern=""):  import pprint as pp; import re; pp.pprint([(f"callable:{callable(getattr(obj,name))}", name, type(getattr(obj,name))) for name in dir(obj) if len(re.findall(pattern, name)) > 0]);
+def pi(obj, pattern=""):  import pprint as pp; import re; pp.pprint([(f"callable:{callable(getattr(obj,name))}", name, type(getattr(obj,name))) for name in dir(obj) if not name.startswith("_") and len(re.findall(pattern, name)) > 0]);
 
