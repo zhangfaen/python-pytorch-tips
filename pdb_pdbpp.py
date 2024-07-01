@@ -6,10 +6,10 @@
 # 3. put below code into .pdbrc.py
 #    import sys
 #    import pdb
-#    from pdb_pdbpp import grep
 
 #    # update below line to indicate where your pdbpp until functions file is.
 #    sys.path.append('/home/zhangfaen/dev/python-pytorch-tips/') 
+#    from pdb_pdbpp import grep
 #    pdb.grep = grep
 # 4. in pdb debugging session, you can use like this way pdb.grep('normalize', dir(a_pytorch_tensor_object))
 
